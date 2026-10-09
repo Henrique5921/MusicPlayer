@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones do FontAwesome para os botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="player-container">
+        <!-- Informações da Música -->
+        <div class="song-info">
+            <div class="cover-art">
+                <i class="fas fa-music"></i>
+            </div>
+            <h2 id="title">Nome da Música</h2>
+            <h3 id="artist">Nome do Artista</h3>
+        </div>
+
+        <!-- Elemento de Áudio Oculto -->
+        <audio id="audio" src=""></audio>
+
+        <!-- Barra de Progresso -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="time-info">
+            <span id="current-time">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <button id="prev" class="control-btn"><i class="fas fa-backward"></i></button>
+            <button id="play" class="control-btn play-btn"><i class="fas fa-play"></i></button>
+            <button id="next" class="control-btn"><i class="fas fa-forward"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
